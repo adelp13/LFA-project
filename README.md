@@ -23,6 +23,7 @@ ex: on the second line, "q0 a q1" means we can get from state q0 to state q1 usi
 On the last line we have the final states (in this case only q4)<br/>
 If the user pressed '0' but the automata is non-deterministic, the program will specify that and it will stop.<br/>
 Otherwise, the user will have to enter a word to be verified and if it is accepted by the DFA it will display the path.<br/>
+For the word lamba, the user will press enter.
 <br/>
 In the NFA case, if the word is accepted, all the paths will be displayed.<br/>
 If the program expects a NFA but the automata is a DFA, it will display "This is a DFA, not a NFA, but the word can still be verified:", because the function that calculates the paths for a NFA can aslo be used for a DFA, but vice-versa is not possible. <br/>
