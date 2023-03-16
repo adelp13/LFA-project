@@ -37,7 +37,7 @@ Using the input above, these are the outputs for the next cases:<br/>
  -user pressed 0, word = ababababababaaaaaba:<br/>
         Word not accepted<br/>
         
-        <br/><br/><br/>
+        <br/>
         
 Another exemple of input file:<br/>
 q0 0 q0<br/>
