@@ -6,8 +6,8 @@ The user is asked to enter 0 if the automata is determinstic and 1 for a non-det
 After that, the automata will be read from a specified file.
 
 Exemple of input file:
-  q0 b q0
-  q0 a q1
+	q0 b q0
+ 	q0 a q1
   q1 a q1
   q1 b q2
   q2 a q1
@@ -55,8 +55,8 @@ Outputs:
 -user pressed 0:
       This is a NFA, not a DFA
 -user pressed 1, word = 101010
-      Number of paths: 5
-      q0 q0 q0 q0 q0 q1 q1
+      Number of paths: 
+			q0 q0 q0 q0 q0 q1 q1
       q0 q0 q0 q0 q0 q2 q2
       q0 q0 q0 q1 q1 q2 q2
       q0 q2 q3 q0 q0 q1 q1
