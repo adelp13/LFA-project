@@ -1,0 +1,14 @@
+ex 1:
+abbabba
+bbabbabba
+bbbbbbaaaaabbbabbaaaaaaab
+
+unaccepted:
+ababababababaaaaaba
+
+
+ex 2:
+10101010
+110101002
+
+110001010
