@@ -1,9 +1,9 @@
 class DFA:
     def __init__(self):
         self.finalStates = []
-        self.transitions = {}
-        self.path = ['0']
-        self.currentState = '0'
+        self.transitions = {} #a double dictionary to store the automata
+        self.path = ['q0'] #q0 is supposed to be the initial state
+        self.currentState = 'q0'
         self.isDfa = True
     def readAutomaton(self, fileName):
         f = open(fileName)
@@ -14,7 +14,7 @@ class DFA:
             if line[i][0] not in self.transitions.keys():
                  self.transitions[line[i][0]] = {line[i][1]: line[i][2]}
             elif line[i][1] in self.transitions[line[i][0]]:
-                    print("This is a NFA, not a DFA")
+                    print("This is a NFA, not a DFA") #if the letter already has its origin in the key, this is not a DFA
                     self.isDfa = False
                     return
             else:
@@ -45,7 +45,7 @@ class NFA:
         self.transitions = {}
         self.paths = []
         self.pathsNo = 0
-        self.multipleRoutes = 0
+        self.multipleRoutes = 0 #if there aren't multiple routes in any point of the automata, it is actually a DFA
     def readAutomaton(self, fileName):
         f = open(fileName)
 
@@ -102,7 +102,7 @@ else:
     nfa.readAutomaton("dfa.in")
     word = input("Word = ")
     word = [x for x in word]
-    path = ('0',)
-    currentState = '0'
+    path = ('q0',)
+    currentState = 'q0'
     nfa.calculatePaths(word, currentState, path)
     nfa.write()
