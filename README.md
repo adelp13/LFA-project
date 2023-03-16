@@ -6,17 +6,17 @@ The user is asked to enter 0 if the automata is determinstic and 1 for a non-det
 After that, the automata will be read from a specified file.
 
 Exemple of input file:
-	q0 b q0
- 	q0 a q1
-  q1 a q1  
-  q1 b q2
-  q2 a q1
-  q2 b q3
-  q3 b q1
-  q3 a q4
-  q4 a q4
-  q4 b q4
-  q4
+	q0 b q0<br/>
+ 	q0 a q1<br/>
+  	q1 a q1  <br />
+  	q1 b q2<br />
+  	q2 a q1<br/>
+	q2 b q3 <br/>
+	q3 b q1<br/>
+	q3 a q4<br/>
+	q4 a q4<br/>
+ 	q4 b q4<br/>
+	q4<br/>
 
 Explanation: q0, q1, q2, q3 and q4 are the states of the automata and on every line is written the connection between two states.
 ex: on the second line, "q0 a q1" means we can get from state q0 to state q1 using letter 'a'.
