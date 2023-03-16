@@ -8,7 +8,7 @@ After that, the automata will be read from a specified file.
 Exemple of input file:
 	q0 b q0
  	q0 a q1
-  q1 a q1
+  q1 a q1  
   q1 b q2
   q2 a q1
   q2 b q3
