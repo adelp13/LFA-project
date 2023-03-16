@@ -28,16 +28,19 @@ In the NFA case, if the word is accepted, all the paths will be displayed.<br/>
 If the program expects a NFA but the automata is a DFA, it will display "This is a DFA, not a NFA, but the word can still be verified:", because the function that calculates the paths for a NFA can aslo be used for a DFA, but vice-versa is not possible. <br/>
 
 Using the input above, these are the outputs for the next cases:<br/>
+
   -user pressed 0, word = bbabbabba:<br/>
           Path: q0 q0 q0 q1 q2 q3 q4 q4 q4 q4<br/>
+	  
   -user pressed 1, word = bbbbbbaaaaabbbabbaaaaaaab:<br/>
          This is a DFA, not a NFA, but the word can still be verified:<br/>
         Number of paths: 1<br/>
         q0 q0 q0 q0 q0 q0 q0 q1 q1 q1 q1 q1 q2 q3 q1 q1 q2 q3 q4 q4 q4 q4 q4 q4 q4 q4<br/>
+	
  -user pressed 0, word = ababababababaaaaaba:<br/>
         Word not accepted<br/>
         
-        <br/>
+       
         
 Another exemple of input file:<br/>
 q0 0 q0<br/>
@@ -51,9 +54,12 @@ q0 1 q2<br/>
 q2 0 q3<br/>
 q3 1 q0<br/>
 q2 q1<br/>
+
 Outputs:<br/>
+
 -user pressed 0:<br/>
       This is a NFA, not a DFA<br/>
+      
 -user pressed 1, word = 101010<br/>
       Number of paths: <br/>
       q0 q0 q0 q0 q0 q1 q1<br/>
