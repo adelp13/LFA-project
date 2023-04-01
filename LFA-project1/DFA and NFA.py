@@ -104,7 +104,7 @@ if command == 0:
         dfa.calculatePath(word)
 else:
     nfa = NFA()
-    nfa.readAutomaton("lambda_nfa.in")
+    nfa.readAutomaton("nfa.in")
     word = input("Word = ")
     word = [x for x in word]
     path = (nfa.initialState,)
