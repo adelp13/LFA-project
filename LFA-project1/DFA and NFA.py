@@ -2,9 +2,11 @@ class DFA:
     def __init__(self):
         self.finalStates = []
         self.transitions = {} #a double dictionary to store the automata
-        self.path = ['q0'] #q0 is supposed to be the initial state
-        self.currentState = 'q0'
+        self.initialState = 'q1' #q0 is supposed to be the initial state
+        self.path = [self.initialState]
+        self.currentState = self.initialState
         self.isDfa = True
+
     def readAutomaton(self, fileName):
         f = open(fileName)
 
@@ -32,10 +34,11 @@ class DFA:
             else:
                 print("Word not accepted")
             return
-        elif word[0] in self.transitions[self.currentState]:
-            self.path.append(self.transitions[self.currentState][word[0]])
-            self.currentState = self.path[len(self.path) - 1]
-            self.calculatePath(word[1:])
+        elif self.currentState in self.transitions:
+            if word[0] in self.transitions[self.currentState]:
+                self.path.append(self.transitions[self.currentState][word[0]])
+                self.currentState = self.path[len(self.path) - 1]
+                self.calculatePath(word[1:])
         else:
             print("Word not accepted")
 
@@ -44,6 +47,7 @@ class NFA:
         self.finalStates = []
         self.transitions = {}
         self.paths = []
+        self.initialState = 'q0'
         self.pathsNo = 0
         self.multipleRoutes = 0 #if there aren't multiple routes in any point of the automata, it is actually a DFA
     def readAutomaton(self, fileName):
@@ -71,14 +75,15 @@ class NFA:
                 self.paths.append(path)
                 self.pathsNo += 1
             return
-        if word[0] in self.transitions[currentState]:
-            states = tuple(self.transitions[currentState][word[0]])
-            for x in states:
-                    crtState = x
-                    newPath = list(path)
-                    newPath.append(crtState)
-                    newPath = tuple(newPath)
-                    self.calculatePaths(word[1:], crtState, newPath)
+        if currentState in self.transitions:
+            if word[0] in self.transitions[currentState]:
+                states = tuple(self.transitions[currentState][word[0]])
+                for x in states:
+                        crtState = x
+                        newPath = list(path)
+                        newPath.append(crtState)
+                        newPath = tuple(newPath)
+                        self.calculatePaths(word[1:], crtState, newPath)
     def write(self):
         if self.multipleRoutes == 0:
             print("This is a DFA, not a NFA, but the word can still be verified:")
@@ -92,17 +97,17 @@ class NFA:
 command = int(input("Type 0 for DFA and 1 for NFA: "))
 if command == 0:
     dfa = DFA()
-    dfa.readAutomaton("nfa.in")
+    dfa.readAutomaton("dfa.in")
     if dfa.isDfa == True:
         word = input("Word = ")
         word = [x for x in word]
         dfa.calculatePath(word)
 else:
     nfa = NFA()
-    nfa.readAutomaton("dfa.in")
+    nfa.readAutomaton("lambda_nfa.in")
     word = input("Word = ")
     word = [x for x in word]
-    path = ('q0',)
-    currentState = 'q0'
+    path = (nfa.initialState,)
+    currentState = nfa.initialState
     nfa.calculatePaths(word, currentState, path)
     nfa.write()

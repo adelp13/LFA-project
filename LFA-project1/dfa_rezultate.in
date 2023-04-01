@@ -1,0 +1,11 @@
+Word = 111
+Word not accepted
+
+Word =
+Path: q1
+
+Word = 100000000
+Path: q1 q3 q4 q3 q4 q3 q4 q3 q4 q3
+
+Word = 10010000011
+Word not accepted

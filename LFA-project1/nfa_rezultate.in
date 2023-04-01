@@ -1,0 +1,10 @@
+Word = aba
+Number of paths: 2
+q0 q1 q2 q3
+q0 q1 q4 q3
+
+Word = abcccccca
+Number of paths: 1
+q0 q1 q4 q4 q4 q4 q4 q4 q4 q3
+
+
