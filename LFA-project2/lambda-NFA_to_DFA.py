@@ -35,6 +35,7 @@ class lambdaNFA:
                 self.transitions[line[i][0]][line[i][1]].append(line[i][2])
 
         self.finalStates = [x for x in line[len(line) - 1].split()]
+        self.automatStates.sort()
         f.close()
     def lambdaTransitions(self, state, currentState):
         if currentState not in self.lambdaTrans[int(state[1:])]:
@@ -53,7 +54,7 @@ class lambdaNFA:
 
     def calculateNFA(self):
         self.alphabet.sort()
-        for state in self.transitions:
+        for state in self.automatStates:
             #final state check:
             if state not in self.finalStatesNFA:
                 finalState = False
@@ -147,7 +148,7 @@ class lambdaNFA:
 
 automat = lambdaNFA()
 command = input("Calculate: 0-NFA   1-DFA\n")
-automat.readAutomat("lambda_nfa.in")
+automat.readAutomat("lambda_nfa4.in")
 automat.calculateLambdaTransitions()
 automat.calculateNFA()
 if command == '0':
