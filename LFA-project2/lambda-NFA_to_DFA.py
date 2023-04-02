@@ -6,6 +6,7 @@ class lambdaNFA:
         self.initialState = 'q0'
         self.statesNo = 0
         self.alphabet = []
+        self.automatStates = []
         self.NFA = {}
         self.finalStatesNFA = []
         self.DFA = {}
@@ -18,8 +19,13 @@ class lambdaNFA:
             line[i] = [x for x in line[i].split()]
             if line[i][1] not in self.alphabet:
                 self.alphabet.append(line[i][1])
+            if line[i][0] not in self.automatStates:
+                self.statesNo += 1
+                self.automatStates.append(line[i][0])
+            if line[i][2] not in self.automatStates:
+                self.statesNo += 1
+                self.automatStates.append(line[i][2])
             if line[i][0] not in self.transitions.keys():
-                 self.statesNo += 1
                  self.transitions[line[i][0]] = {line[i][1] : []}
                  self.transitions[line[i][0]][line[i][1]].append(line[i][2])
             elif line[i][1] not in self.transitions[line[i][0]]:
@@ -42,7 +48,7 @@ class lambdaNFA:
 
     def calculateLambdaTransitions(self):
         self.lambdaTrans = [[] for i in range(self.statesNo)]
-        for state in self.transitions:
+        for state in self.automatStates:
             self.lambdaTransitions(state, state)
 
     def calculateNFA(self):
@@ -141,7 +147,7 @@ class lambdaNFA:
 
 automat = lambdaNFA()
 command = input("Calculate: 0-NFA   1-DFA\n")
-automat.readAutomat("lambda_nfa2.in")
+automat.readAutomat("lambda_nfa.in")
 automat.calculateLambdaTransitions()
 automat.calculateNFA()
 if command == '0':
