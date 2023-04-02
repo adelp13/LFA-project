@@ -37,7 +37,8 @@ class lambdaNFA:
             if 'lambda' in self.transitions[currentState]:
                 states = tuple(self.transitions[currentState]['lambda'])
                 for x in states:
-                    self.lambdaTransitions(state, x)
+                    if x not in self.lambdaTrans[int(state[1:])]:
+                        self.lambdaTransitions(state, x)
 
     def calculateLambdaTransitions(self):
         self.lambdaTrans = [[] for i in range(self.statesNo)]
@@ -140,7 +141,7 @@ class lambdaNFA:
 
 automat = lambdaNFA()
 command = input("Calculate: 0-NFA   1-DFA\n")
-automat.readAutomat("lambda_nfa3.in")
+automat.readAutomat("lambda_nfa2.in")
 automat.calculateLambdaTransitions()
 automat.calculateNFA()
 if command == '0':
