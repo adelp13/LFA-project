@@ -148,7 +148,7 @@ class lambdaNFA:
 
 automat = lambdaNFA()
 command = input("Calculate: 0-NFA   1-DFA\n")
-automat.readAutomat("lambda_nfa4.in")
+automat.readAutomat("lambda_nfa5.in")
 automat.calculateLambdaTransitions()
 automat.calculateNFA()
 if command == '0':
@@ -161,3 +161,4 @@ else:
     # for state in automat.DFA:
     #     print(state + ':', automat.DFA[state])
     # print("Final states: ", *automat.finalStatesDFA)
+

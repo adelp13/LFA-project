@@ -1,4 +1,4 @@
-q0 lambda q1
 q0 lambda q2
-q2 lambda q3
-q3
+q2 lambda q1
+q1 lambda q0
+q2

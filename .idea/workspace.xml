@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9386785e-6be9-47b9-98d6-4206348a75dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dfa1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfa3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfa_rezultate.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfa1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfa3.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfa4.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfa_rezultate.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DFA and NFA.py" beforeDir="false" afterPath="$PROJECT_DIR$/DFA and NFA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfa.in" beforeDir="false" afterPath="$PROJECT_DIR$/dfa.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfa.in" beforeDir="false" afterPath="$PROJECT_DIR$/nfa.in" afterDir="false" />
+    <list default="true" id="ee0e72d1-3f9f-499f-857f-84fc8120ea09" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/LFA-project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LFA-project2/lambda_nfa5.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LFA-project2/lambda_nfa6.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LFA-project3/minimal1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LFA-project3/minimal1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LFA-project3/minimal2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LFA-project3/minimal3.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LFA-project3/minimal_DFA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LFA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LFA-project1/DFA and NFA.py" beforeDir="false" afterPath="$PROJECT_DIR$/LFA-project1/DFA and NFA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LFA-project2/NFA_DFA.out" beforeDir="false" afterPath="$PROJECT_DIR$/LFA-project2/NFA_DFA.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LFA-project2/lambda-NFA_to_DFA.py" beforeDir="false" afterPath="$PROJECT_DIR$/LFA-project2/lambda-NFA_to_DFA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LFA-project2/lambda_nfa4.in" beforeDir="false" afterPath="$PROJECT_DIR$/LFA-project2/lambda_nfa4.in" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +30,8 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2N7AVMulz6ANW9s6ywDFfLz4lTw" />
+  <component name="ProjectId" id="2PWb2mnzRTfjRC95tbuQe4t8hV0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,40 +40,17 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/facultate/LFA/LFA-project&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="DFA and NFA" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="LFA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Documents\python\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DFA and NFA.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9386785e-6be9-47b9-98d6-4206348a75dc" name="Changes" comment="" />
-      <created>1679004770045</created>
+      <changelist id="ee0e72d1-3f9f-499f-857f-84fc8120ea09" name="Changes" comment="" />
+      <created>1683575579326</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1679004770045</updated>
+      <updated>1683575579326</updated>
     </task>
     <servers />
   </component>

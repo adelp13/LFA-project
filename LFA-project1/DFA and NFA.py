@@ -111,3 +111,14 @@ else:
     currentState = nfa.initialState
     nfa.calculatePaths(word, currentState, path)
     nfa.write()
+
+
+    def equivalentStates(self, a,
+                         b):  # functia verifica daca 2 stari din aceeasi partitie sunt in continutare echivalente
+        for letter in self.alphabet:
+            first = self.transitions['q' + str(a)][letter][0]
+            first = int(first[1:])
+            second = self.transitions['q' + str(b)][letter][0]
+            second = int(second[1:])
+            return self.partition[first] == self.partition[second]
+        return True
